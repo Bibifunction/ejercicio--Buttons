@@ -1,0 +1,54 @@
+:root {
+  /* ----->Colores primarios */
+  --color-primary: hsl(213, 100%, 53%);
+  --color-primary-active: hsl(213, 92%, 41%);
+  --color-primary-text: hsl(213, 100%, 100%);
+
+  /* ------>Colores secundarios */
+  --color-secondary: hsl(213, 100%, 56%);
+
+  /* ------>Colores neutros */
+  --color-white: hsl(0, 0%, 100%);
+
+  /* ------>Estados */
+  --color-hover: hsl(0, 0%, 70%);
+  --color-disabled-bg: hsl(0, 0%, 90%);
+  --color-disabled-text: hsl(0, 0%, 60%);
+  --color-disabled-border: hsl(0, 0%, 80%);
+
+  /* ------> TIPOGRAFÍA */
+  --font-family-poppins: 'Poppins', sans-serif;
+  --font-weight-regular: 400;
+  --font-size-18: 18px;
+  --line-height-145: 1.45;
+
+  /* ------> ESPACIADO */
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-20: 20px;
+  --space-52: 52px;
+
+  /* ------> BORDES */
+  --border-radius-10: 10px;
+  --border-width-2: 2px;
+
+  /* ------> BOTONES */
+  --btn-padding-x: 52px;
+  --btn-padding-y: 12px;
+  --btn-min-width: 163px;
+  --btn-transition: background-color 0.2s ease-in;
+}
+
+@media screen and (width > 400px) {
+  .btn {
+    margin-bottom: var(--space-20);
+  }
+}
+
+html {
+  font-family: var(--font-family-poppins);
+  padding: var(--space-20);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
